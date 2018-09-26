@@ -1,14 +1,27 @@
 {
-  "name": "node-history-api/",
+  "name": "node-history-api",
+  "description": "History API Project",
+  "author": "James W. Berry <supnowsucka@gmail.com>",
+  "license": "ISC",
   "version": "0.0.1",
   "private": true,
-  "description": "History API Project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jameswberry/node-history-api"
+  },
+  "bugs": {
+    "url": "https://github.com/jameswberry/node-history-api/issues"
+  },
+  "homepage": "https://github.com/jameswberry/node-history-api",
   "keywords": [],
-  "author": "James W. Berry",
-  "license": "",
   "main": "app.js",
+  "config": {
+  	  "env": "development",
+	  "port": 10010
+  },
   "dependencies": {
     "express": "^4.12.3",
+    "redis": "^2.8.0",
     "swagger-express-mw": "^0.1.0"
   },
   "devDependencies": {
@@ -16,7 +29,7 @@
     "supertest": "^1.0.0"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node server.js",
     "test": "swagger project test"
   }
 }

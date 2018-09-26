@@ -1,1 +1,2 @@
-# Skeleton project for Swagger
+# node-history-api
+API endpoints for node-history app.
